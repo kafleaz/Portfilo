@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Segoe UI';
+
+}
+
+.boxed
+{
+    position: absolute;
+    float: left;
+    height: 84%;
+    width: 88%;
+    background-color: #4B32B0;    
+    box-shadow: 0px 8px 4px #C4C4C4;
+    border-bottom-right-radius: 245px;
+    
+}
+.nav-links
+{
+    margin-top: 8px;
+    box-shadow: #252527;
+    box-shadow: 0px 3px;
+    flex: 1;
+}
+.nav-links ul li {
+    padding-left: 5px;
+    display:inline ;
+    float: right;
+    position: relative;
+}
+.nav-links ul li a{
+    text-align: right;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16;
+    padding: 12px;
+
+}
+.nav-links ul li a:hover
+{
+    margin: auto;
+    background-color: #662EDE;
+}
+.bluebox{
+    float: right;
+    margin-right: 1.5%;
+    margin-top: 4px;
+    width: 9%;
+    border-radius: 12px;
+    background-color: #4B32B0;
+}
+.bluebox ul
+{
+    position: absolute;
+    margin: auto;
+    padding: 3%;
+    text-align: center;
+    list-style-type: none;
+    position: relative;
+}
+.bluebox ul li
+{
+
+    display: inline;
+    text-align: right;
+}
+.bluebox ul li a
+{
+    padding: auto;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+}
+.bluebox:hover
+{
+    background-color: #662EDE;
+}
