@@ -10,7 +10,7 @@
 {
     position: absolute;
     float: left;
-    height: 84%;
+    height: 665px;
     width: 88%;
     background-color: #4B32B0;    
     box-shadow: 0px 8px 4px #C4C4C4;
@@ -76,4 +76,163 @@
 .bluebox:hover
 {
     background-color: #662EDE;
+}
+.circle1
+{
+    position: absolute;
+    float: left;
+    top: 18%;
+    left: 85%;
+    background: linear-gradient(
+        to left bottom,
+        rgba(255,255,255,0.253),
+        rgba(255,255,255,0.0) 
+        );
+    width: 50px;
+    min-height: 100px;
+    border-radius: 50px 0px 0px 50px;
+}
+.circle2
+{
+    position: absolute;
+    top: -34px;
+    left: -50px;
+    background: linear-gradient(
+        to  right ,
+        rgba(255,255,255,0.233),
+        rgba(255,255,255,0.05) 
+        );
+    width: 110px;
+    min-height: 110px;
+    border-radius: 50% 50% 50% 50%;
+    
+}
+.circle3,
+.circle4
+{
+    position: absolute;
+    float: left;
+    background: linear-gradient(
+        to top right,
+        rgba(255, 255, 255, 0.253),
+        rgba(255, 255, 255, 0) 
+        );
+    width: 79px;
+    min-height: 79px;
+    border-radius: 50% 50% 50% 50%;  
+}
+.circle3
+{
+    top: -20.3px;
+    left: 683.64px;
+}
+.circle4
+{
+    top:-35.29px ;
+    left: 742.61px;
+}
+.circle5
+{
+    position: absolute;
+    float: left;
+    top: 465px;
+    left: 0px;
+    background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0.193),
+        rgba(255, 255, 255, 0) 
+        );
+    width: 200px;
+    min-height: 200px;
+    border-top-right-radius: 100%;
+    z-index:1;  
+}
+.circle6
+{
+    position: absolute;
+    float: left;
+    left: 0px;
+    top: 540px;
+    background: #E5E5E5;
+    background: linear-gradient(
+        to  right ,
+        rgba(255, 255, 255, 0.153),
+        rgba(255, 255, 255, 0.0) 
+        );
+    width: 125px;
+    min-height: 125px;
+    border-top-right-radius: 100%; 
+    z-index:9;
+}
+.circle7
+{
+    position: absolute;
+    float: left;
+    top: 615px;
+    left: 0px;;
+    background:#4B32B0;
+    width: 50px;
+    min-height: 50px;
+    border-top-right-radius: 100%;
+    z-index:15 ;
+}
+.circle8,
+.circle9
+{
+    position: absolute;
+    float: left;
+    background: linear-gradient(
+        to  bottom,
+        rgba(255, 255, 255, 0.233),
+        rgba(255, 255, 255, 0.0) 
+        );
+    width: 79px;
+    min-height: 79px;
+    border-radius: 50% 50% 50% 50%;  
+}
+.circle8
+{
+
+    top: 422px;
+    left: 420px;
+}
+.circle9
+{
+    background: linear-gradient(
+        to  right bottom,
+        rgba(255, 255, 255, 0.233),
+        rgba(255, 255, 255, 0.0) 
+        );
+    top:460px ;
+    left: 404px;
+}
+.circle10
+{
+    position: absolute;
+    float: left;
+    top: 610px;
+    left: 56%;
+    border : 10px ;
+    background: linear-gradient(
+        to  right bottom,
+        rgba(255, 255, 255, 0.233),
+        rgba(255, 255, 255, 0.0) 
+        );
+    width: 100px;
+    min-height: 50px;
+    border-radius: 50px 50px 0px 0px;
+    z-index:15 ;
+}
+.circle11
+{
+    position: absolute;
+    float: left;
+    top: 625px;
+    left: 56%;
+    border : 10px ;
+    background-color: #4B32B0;
+    width: 90px;
+    min-height: 50px;
+    border-radius: 50px 50px 0px 0px;
+    z-index:15 ;
 }
