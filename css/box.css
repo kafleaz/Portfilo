@@ -1,6 +1,6 @@
 *{
     box-sizing: border-box;
-    margin: 0%;
+    margin: 0;
     padding: 0%;
     font-family: 'Segoe UI';
 
@@ -41,14 +41,14 @@
 .nav-links ul li a:hover
 {
     margin: auto;
-    background-color: #662EDE;
+    background-color: #c4c4c48a;
     padding-top: 3px;
     padding-bottom: 5px;
     border-radius: 5px;
 }
 .bluebox{
     float: right;
-    margin-right: 1.5%;
+    margin-right: 20px;
     margin-top: 6px;
     width: 9%;
     border-radius: 12px;
@@ -68,24 +68,32 @@
 
     display: inline;
     text-align: right;
+    padding: 0px;
 }
 .bluebox ul li a
 {
-    padding-top: 5px ;
+    padding-bottom: 5px;
+    padding-top: 5px;
     color: #fff;
     font-size: 16px;
     text-decoration: none;
 }
+.bluebox ul li a:hover
+{
+    color:#4B32B0;
+}
 .bluebox:hover
 {
-    background-color: #662EDE;
+    background-color: #C4C4C48a;
 }
+
+
 .circle1
 {
     position: absolute;
-    float: left;
+    float: right;
     top: 18%;
-    left: 85%;
+    right: 12%;
     background: linear-gradient(
         to left bottom,
         rgba(255,255,255,0.253),
@@ -214,7 +222,7 @@
     position: absolute;
     float: right;
     top: 605px;
-    right: 50%;
+    right: 37%;
     height: 60px;
     width: 120px;
     border-radius:  0%;
@@ -265,21 +273,151 @@
     height: 180px;
     opacity:0.6;
 }
-
-.description
+.topwrite
 {
     position: absolute;
     float: right;
+    width:100%;
+    padding-right: 55%;
+    padding-left:100px;
     top: 260px;
-    right:55%;
-    left:5%;
-    font-size: 24px;
+    
+}
+.topwrite>h3
+{
+    
+    font-size: 28px;
+    letter-spacing:1px;
     color: #fff;
     font-weight: bold;
+}
+.topwrite>p 
+{
+    padding-top: 20px;
+    font-size:18px;
+    letter-spacing: normal;
+    color: #fff;
 }
 .firstsection
 {
     position: fixed;
+}
+
+/*--============home page Media===========---*/
+
+@media screen and (max-width: 900px)
+{
+    .boxed
+    {
+        width:98%;
+        height:700px;
+        border-bottom-right-radius: 200px;
+    }
+    .bluebox
+    {
+        background-color: transparent;
+        margin-right: 1%;
+    }
+    .bluebox ul li a
+    {
+        padding: 12px;
+        margin-left: -25px;
+    }
+    .bluebox ul li a:hover
+    {
+        color:#fff;
+        background-color: #c4c4c48a;
+        padding-top: 3px;
+        padding-bottom: 5px;
+        border-radius: 5px;
+    }
+    .bluebox:hover
+    {
+        background-color:transparent;
+    }
+    .circle1
+    {
+        right: 0%;
+    }
+    .circle3
+    {
+        right:10%;
+    }
+    .circle4
+    {
+        right:4%;
+    }
+    .circle11
+    {
+        visibility: hidden;
+    }
+    .circle5
+    {
+        visibility: hidden;
+    }
+    .circle6
+    {
+        top:575px; 
+    }
+    .circle7
+    {
+        top:650px;
+    }
+    .circle8
+    {
+        top:270px;
+        left:25%
+    }
+    .circle9
+    {
+        top: 240px;
+        left:30%
+    }
+    .circle10, .photo
+    {
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: 350px;
+        z-index:99999;
+
+    }
+    .photo
+    {
+        border-radius: 50% 50% 49.4% 48.8%;
+    }
+    .topwrite
+    {
+        width:100%;
+        padding :50px 100px 0px 100px;
+        text-align: center;
+        top:100px;
+    }
+    .topwrite>h3
+    {
+        font-size: 24px;
+    }
+    .topwrite>p
+    {
+        font-size: 16px;
+        padding-top: 10px;
+    }
+
+}
+/*================media===================*/
+@media screen and (max-width: 550px)
+{
+    .topwrite
+    {
+        top:70px;
+        padding: 50px 85px 0px 85px;
+    }
+    .topwrite>h3
+    {
+        font-size: px;
+    }
+
+    
 }
 
 /*------Service start------*/
@@ -289,9 +427,9 @@
     position: absolute;
     float: left;
     display: flex;
+    flex-direction: row;
     top: 814px;
     width: 100%;
-    flex-wrap: nowrap;
     justify-content:center;
     background: rgba(102, 46, 222, 0.93);
     padding: 150px 0 70px 0 ;
@@ -301,12 +439,13 @@
 .container> div
 {
     height: auto;
-    width:400px;
     border-radius: 20px;
     background: rgba(255, 255, 255, 0.911);
     text-align : center;
     margin: 10px;
     padding: 10px ;
+    float: left;
+    width:25%;
 }
 .container> div:hover
 {
@@ -316,8 +455,6 @@
 .service
 {
     position: absolute;
-    float: left;
-    text-align:center;
     top: 50px;
     font-size: 32px;
     color:#fff;
@@ -325,8 +462,6 @@
 .provide
 {
     position: absolute;
-    float: left;
-    text-align:center;
     top: 90px;
     font-size: 20px;
     color:#fff;
@@ -354,7 +489,45 @@
     font-size:28px;
 }
 
+/*============Services Media===========*/
+
+@media screen and (max-width: 1100px)
+{
+    .container>div 
+    {
+        width:30%;
+    }
+}
+@media screen and (max-width: 900px)
+{
+    .container
+    {
+        flex-direction: column;
+    }
+    .container>div 
+    {
+        
+        height: 300px;
+        width: 60%;
+        margin-left:20% ;
+    }
+    .provide, .service
+    {
+       position: absolute;
+       text-align: center;
+       width:100%;
+    }
+    .fa-paintbrush ,.fa-chart-line, .fa-code
+    {
+        color:#4B32B0;
+        font-size :50px;
+        margin-top:50px;
+        margin-bottom:10px;
+    }
+}
+
 /*==========skill Start============*/
+
 .service_part
 {
     position: absolute;
@@ -381,5 +554,12 @@
     font-size: 20px;
     text-align: left;
     margin:40px;
+}
 
+@media screen and (max-width: 900px)
+{
+    .service_part
+    {
+        top:2050px;
+    }
 }
