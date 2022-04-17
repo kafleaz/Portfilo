@@ -17,6 +17,16 @@
     border-bottom-right-radius: 245px;
     
 }
+.boxed a>img
+{
+    position: absolute;
+    width: 40px;
+    flex:1;
+    justify-content: space-between ;
+    left:100px;
+    top:10px;
+}
+
 .nav-links
 {
     position: absolute;
@@ -24,6 +34,7 @@
     margin-top: 8px;
     flex: 1;
 }
+
 .nav-links ul li {
     padding-left: 5px;
     display:inline ;
@@ -49,7 +60,7 @@
 .bluebox{
     float: right;
     margin-right: 20px;
-    margin-top: 6px;
+    margin-top: 4px;
     width: 9%;
     border-radius: 12px;
     background-color: #4B32B0;
@@ -72,8 +83,8 @@
 }
 .bluebox ul li a
 {
-    padding-bottom: 5px;
-    padding-top: 5px;
+    padding-bottom: 6px;
+    padding-top: 6px;
     color: #fff;
     font-size: 16px;
     text-decoration: none;
@@ -263,6 +274,8 @@
     left: 50%;
     height: 317.88px;
     border-radius: 50% 50% 48.5% 50% ;
+    pointer-events: none;
+    user-select: none;
 }  
 .star0
 {
@@ -272,6 +285,8 @@
     left: 22%;
     height: 180px;
     opacity:0.6;
+    pointer-events: none;
+    user-select: none;
 }
 .topwrite
 {
@@ -296,6 +311,7 @@
     padding-top: 20px;
     font-size:18px;
     letter-spacing: normal;
+    font-weight: 500;
     color: #fff;
 }
 .firstsection
@@ -400,7 +416,10 @@
     .topwrite>p
     {
         font-size: 16px;
+        font-weight:400;
         padding-top: 10px;
+        padding-left: 50px;
+        padding-right: 50px;
     }
 
 }
@@ -411,13 +430,17 @@
     {
         top:70px;
         padding: 50px 85px 0px 85px;
+        text-align: left;
     }
     .topwrite>h3
     {
         font-size: px;
     }
-
-    
+    .topwrite>p
+    {
+        padding-left: 0px;
+        padding-right: 0px;  
+    }
 }
 
 /*------Service start------*/
@@ -528,7 +551,7 @@
 
 /*==========skill Start============*/
 
-.service_part
+.skill_part
 {
     position: absolute;
     float: left;
@@ -556,9 +579,10 @@
     margin:40px;
 }
 
+
 @media screen and (max-width: 900px)
 {
-    .service_part
+    .skill_part
     {
         top:2050px;
     }
